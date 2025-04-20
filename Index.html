@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skillforge Cheat Status</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(-45deg, #0e1117, #1a1d24, #0e1117, #1a1d24);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #ffffff;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      color: #3399ff;
+      border-bottom: 2px solid #2c2f36;
+      text-shadow: 0 0 8px #3399ff;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      margin-top: -40px;
+    }
+
+    .status-container {
+      background-color: rgba(26, 29, 36, 0.85);
+      padding: 30px;
+      border-radius: 10px;
+      width: 400px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      animation: pulse 3s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 15px rgba(0, 255, 255, 0.2); }
+      50% { box-shadow: 0 0 25px rgba(0, 255, 255, 0.4); }
+      100% { box-shadow: 0 0 15px rgba(0, 255, 255, 0.2); }
+    }
+
+    .status-container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #3399ff;
+      text-shadow: 0 0 6px #3399ff;
+    }
+
+    .status-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #2c2f36;
+    }
+
+    .status-item:last-child {
+      border-bottom: none;
+    }
+
+    .status-green {
+      color: #00ffcc;
+      font-weight: bold;
+    }
+
+    .status-blue {
+      color: #3399ff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Skillforge Status
+  </header>
+  <main>
+    <div class="status-container">
+      <h1>Cheat Status</h1>
+
+      <div class="status-item"><span>R6 Ring-1</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>Valorant Onyx Lite</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>Fortnite Fecurity</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>Bo6/Mw3/Mw2/Wz6 - Fecurity</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>CS2 MemeSense</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>Apex Legends Fecurity</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>RDR2 Ovix Menu</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>EFT Ring-1</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>EFT Fecurity</span><span class="status-green">Undetected</span></div>
+      <div class="status-item"><span>Rust Ring-1</span><span class="status-blue">Updating</span></div>
+      <div class="status-item"><span>Overwatch Ring-1</span><span class="status-green">Undetected</span></div>
+    </div>
+  </main>
+</body>
+</html>
